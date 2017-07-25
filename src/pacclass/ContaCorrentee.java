@@ -3,8 +3,19 @@ package pacclass;
 public class ContaCorrentee {
 
     String nome;
-    float saldo = 0;
+    float saldo ;
 
+    public ContaCorrentee(String nome) {
+        this.nome = nome;
+        saldo = 0;
+    }
+
+    ContaCorrentee() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+    
     float verificarSaldo() {
         return saldo;
     }
